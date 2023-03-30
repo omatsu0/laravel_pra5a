@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class AjaxTestController extends Controller
@@ -31,6 +31,5 @@ class AjaxTestController extends Controller
         // htmlへ渡す配列$productListをjsonに変換する
         echo json_encode($productList);
     }
-
 
 }

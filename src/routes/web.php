@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-});
 
-Route::get('ajax-test/', 'AjaxTestController@getIndex');
-Route::get('ajax-test/show_all', 'AjaxTestController@showAll');
+Route::get('/', 'ArticleController@index');
+
