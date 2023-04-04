@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark blue-gradient">
 
-  <a class="navbar-brand" href="/"><i class="far fa-sticky-note mr-1"></i>Memo</a>
+  <a class="navbar-brand" href="/"><i class="far fa-sticky-note mr-1"></i>memo</a>
 
   <ul class="navbar-nav ml-auto">
 
@@ -15,10 +15,10 @@
       <a class="nav-link" href="{{ route('login') }}">ログイン</a>
     </li>
     @endguest
-      
+
     @auth
     <li class="nav-item">
-      <a class="nav-link" href=""><i class="fas fa-pen mr-1"></i>投稿する</a>
+      <a class="nav-link" href="{{ route('articles.create') }}"><i class="fas fa-pen mr-1"></i>投稿する</a>
     </li>
     @endauth
     
